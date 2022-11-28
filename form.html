@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulaire</title>
+</head>
+<body>
+    <div class="entete">
+        <h1>Entete</h1>
+    </div>
+    <div class="corp">
+        <div class="menu">
+            <a class="items" href="#">Accueil</a>
+            <a class="items" href="#">Film</a>
+            <a class="items" href="#">Vos retours</a>
+        </div>
+        <div class="main">
+            <h1>Formulaire</h1>
+            <div class = "form">
+                <label class="txt" for="nom">Nom</label>
+                    <input type="text" name="nom" class="input">
+                <label class="txt" for="prenom">Prenom</label>
+                    <input type="text" name="prenom" class="input">
+                <label class="txt" for="email">Email</label>
+                    <input type="email" name="email" class="input">
+                <label class="txt" for="satisfaction">Satisfaction</label>
+                    <select name="satisfaction" class="input">
+                        <option class = "items" value="tres satisfait">Très satisfait</option>
+                        <option class = "items" value="satisfait">Satisfait</option>
+                        <option class = "items" value="pas satisfait">Pas satisfait</option>
+                    </select>
+                <label class="txt" for="commentaire">Commentaire</label>
+                    <textarea name="commentaire" id="commentaire" cols="30" rows="10" class="input"></textarea>
+                <input class = "button" type="submit" value="Envoyer">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
