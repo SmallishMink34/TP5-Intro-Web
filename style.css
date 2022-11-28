@@ -57,7 +57,14 @@ body{
 }
 .main{
     padding: 0.5em;
-    width: calc(100% - 200px);
+    
+    width: 98%;
+    height:auto;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
 }
 .form{
     display: flex;

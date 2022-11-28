@@ -1,0 +1,92 @@
+body{
+    height: 100%;
+}
+
+@keyframes haut-bas {
+    0%{
+        opacity: 0;
+        transform: translateY(-80%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}   
+.anim{
+    animation: haut-bas 1s ease-in-out;
+}
+
+.EnteteImg{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.imagefilm{
+    width:90%;
+    position:relative;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#ombre{
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    z-index:10;
+    box-shadow: inset 0em -1em 30px rgba(26, 26, 26, 1);
+    
+}
+
+.Titre{
+    color: white;
+    margin-left: 50px;
+}
+.Titre h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: -5px;
+}
+.petiteInfo{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+}
+
+.informations{
+margin-left: 20%;
+}
+
+.pegi{
+    font-size: 12px;
+    padding: 4px;
+    background-color: #007198;
+    border-radius: 3px;
+}
+
+table tbody tr th{
+    text-align: end;
+}
+table tbody tr td{
+    text-align:left;
+    background-color: rgba(0,0,0,0.8);
+}
+table thead tr th{
+    text-decoration: underline;
+}
+.tableau{
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.footer{
+    width: 100%;
+    margin-left: 2%;
+    padding-bottom: 20px;
+}
+.source{
+    margin-left: 2%;
+}
