@@ -9,8 +9,9 @@
 body{
     margin: auto; 
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to bottom right, #FFDEF2 0%, #E6F0FF 100%);
+    background: #1a1a1a;
     height: 200vh;
+    color : white;
 }
 
 .entete{
@@ -20,28 +21,20 @@ body{
     font-weight: bold;
     padding: 0.5em;
     text-align: center;
-    border : 1px solid red;
-    margin: 5px;
-    border-radius: 10px;
+    margin: auto;
 }
 
-.corp{
-    display: flex;
-}
 
 /* MENU */
 .menu{
     display: flex;
+    justify-content: flex-end;
     flex-direction: column;
     background-color: #007198;
     font-size : 1.5em;
-    text-decoration: none;
-    padding: 0.5em;
-    width: 200px;
-    height: 200px;
-    border : 1px solid red;
-    margin: 5px;
-    border-radius: 10px;
+    position: fixed;
+    height: 100%;
+    width: 300px;
 }
 /* les items dans le menu */
 
@@ -50,6 +43,7 @@ body{
     font-weight: bold;
     text-decoration: none;
     padding: 0.5em;
+    margin: 0.5em;
     
 }
 .menu .items:hover{
@@ -58,12 +52,12 @@ body{
     transition: background-color 0.7s;
 }
 /* Partie de droite */
+.corp{
+    margin-left: 300px;
+}
 .main{
-    color: #051C24;
     padding: 0.5em;
     width: calc(100% - 200px);
-    border : 1px solid red;
-    margin: 5px; 
 }
 .form{
     display: flex;
@@ -98,4 +92,24 @@ body{
     background-color: #007198;
     color: #051C24;
     transition: background-color 0.7s;
+}
+/* keyframe gauche vers la droite */
+@keyframes gauche_droite{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+/* keyframe haut vers bas plus opacité */
+@keyframes haut_bas{
+    0%{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
 }
